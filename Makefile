@@ -1,6 +1,5 @@
 CXX = g++
 CXXFLAGS = -std=c++20 -Wall
--ggdb
 
 all: test main
 
