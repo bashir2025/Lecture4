@@ -23,24 +23,6 @@ TEST_CASE ("Sum TEST", "Sum"){
 
 }
 
-std::vector<int> AddN(std::vector<int> v, int n){
-    std::vector<int> x;
-    for (int i = 0; i < v.size(); i++){
-
-       x.push_back(v[i] + n);
-
-    }
-
-    return x;
-
-}
-
-std::vector<int> v{1,2,3};
-	std::vector<int> res = AddN(v, 5);
-	for(int i=0;i<res.size();i++){
-		std::cout<<res[i]<<" ";
-	}
-
 TEST_CASE ("AddN TEST", "AddN"){
     
     
@@ -53,15 +35,13 @@ TEST_CASE ("AddN TEST", "AddN"){
 
 }
 
-
-
-TEST_CASE ("String AddN TEST", "String AddN"){
+TEST_CASE ("Join TEST", "Join"){
     
-    std::vector<string> y{jo,n};
-    std::vector<string> z{Hel,o};
+    std::vector<string> y{"jo","n"};
+    std::vector<string> z{"Hel","o"};
     
-    REQUIRE(Join(y, i) == "join");
-    REQUIRE(Join(z, l) == "Hello");
+    REQUIRE(Join(y, "i") == "join");
+    REQUIRE(Join(z, "l") == "Hello");
     
 
 }
