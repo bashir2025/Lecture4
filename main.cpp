@@ -16,9 +16,9 @@ int main(){
     
     std::cout << Sum(x) << std::endl;
     
-    std::vector<string> y{jo,n};
+    std::vector<string> y{"jo","n"};
     
-    std::cout << Join(y, i) << std::endl;
+    std::cout << Join(y, "i") << std::endl;
     
     std::cout << NthFibonacci(6) << std::endl;
     
